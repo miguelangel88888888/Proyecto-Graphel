@@ -33,8 +33,16 @@ header h1 {
   font-size: 28px;
 }
 
+header h1 .blanco {
+  color: #fff;
+}
+
+header h1 .azul {
+  color: #1e88e5;
+}
+
 header h1 span {
-  color: #e8491d;
+  color: #d22424;
 }
 
 nav {
