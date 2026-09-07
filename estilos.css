@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  font-size: 24px;
+}
+
+header h1 span {
+  color: #00aaff;
+}
+
+nav {
+  float: right;
+  padding-top: 4px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+.banner {
+  background: url("images/cabecera.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.boletin {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.boletin input {
+  padding: 10px;
+  width: 250px;
+}
+
+.boletin button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tecnologias {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.tecnologias .contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.tecnologias .columna {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 15px;
+}
+
+.tecnologias .columna img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+footer {
+  background: #00aaff;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+  header h1,
+  nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 7px;
+  }
+
+  .tecnologias {
+    padding: 30px 8px;
+  }
+
+  .tecnologias .contenedor {
+    flex-wrap: nowrap;
+  }
+
+  .tecnologias .columna {
+    margin: 0 4px;
+  }
+
+  .tecnologias .columna img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .tecnologias .columna p {
+    font-size: 12px;
+  }
+
+  .boletin input,
+  .boletin button {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
